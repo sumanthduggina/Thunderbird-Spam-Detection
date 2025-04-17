@@ -1,0 +1,35 @@
+.messageBanner {
+  background-color: #f0f0f0;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.messageBanner.spam {
+  background-color: #d70022;
+}
+
+.messageBannerText {
+  flex-grow: 1;
+  font-size: 14px;
+  color: #333;
+}
+
+.messageBanner.spam .messageBannerText {
+  color: white;
+}
+
+.messageBannerButton {
+  padding: 4px 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.messageBannerButton:hover {
+  background-color: #0056b3;
+}
