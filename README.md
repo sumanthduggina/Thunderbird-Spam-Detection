@@ -79,16 +79,16 @@ Upload the following files to your Google Colab session:
 
 #### ✅ Step 2: Install Required Libraries
 In a Colab code cell, run:
-```bash
-!pip install flask torch pyngrok
+
+`!pip install flask torch pyngrok`
 
 ### ✅ Step 3: Set Up Ngrok
 
 1. Create an account at [ngrok.com](https://ngrok.com).
 2. After registering, get your **auth token** from the Ngrok dashboard.
 3. In your Google Colab notebook, run the following to authenticate:
-```bash
-!ngrok authtoken YOUR_AUTH_TOKEN_HERE
+
+`!ngrok authtoken YOUR_AUTH_TOKEN_HERE`
 
 ### ✅ Step 4: Start the Flask Server
 
