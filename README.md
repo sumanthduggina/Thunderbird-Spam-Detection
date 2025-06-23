@@ -1,6 +1,6 @@
 # 🛡️ AI-Powered Real-Time Phishing Detection for Thunderbird
 
-A capstone project designed to enhance email security by detecting phishing attacks in real-time using a custom Thunderbird extension integrated with machine learning models.
+A project designed to enhance email security by detecting phishing attacks in real-time using a custom Thunderbird extension integrated with machine learning models.
 
 ---
 
