@@ -63,9 +63,7 @@ Phishing emails pose a growing threat worldwide. Traditional spam filters strugg
 │ ├── background.js
 │ ├── content-script.js
 │ └── styles.css
-├── data/ # Sample datasets
-├── README.md
-
+└── README.md
 
 
 ## 🧭 Future Improvements
