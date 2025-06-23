@@ -82,3 +82,53 @@ In a Colab code cell, run:
 ```bash
 !pip install flask torch pyngrok
 
+### ✅ Step 3: Set Up Ngrok
+
+1. Create an account at [ngrok.com](https://ngrok.com).
+2. After registering, get your **auth token** from the Ngrok dashboard.
+3. In your Google Colab notebook, run the following to authenticate:
+```bash
+!ngrok authtoken YOUR_AUTH_TOKEN_HERE
+
+### ✅ Step 4: Start the Flask Server
+
+- Run the main cell that launches the Flask app.
+- Once started, Ngrok will display a public URL (e.g., `https://abc123.ngrok.io`).
+- **Copy this URL** — you’ll use it in the Thunderbird extension.
+
+---
+
+## 🧩 2. Thunderbird Extension Setup
+
+### ✅ Step 1: Update the Server URL
+
+- Open the `background.js` file in your Thunderbird extension directory.
+- Replace the existing backend URL with the Ngrok URL you copied.
+- Save the file.
+
+### ✅ Step 2: Load the Extension in Thunderbird
+
+1. Open **Thunderbird**.
+2. Navigate to: Tools > `Developer Tools > Debug Add-ons`
+3. Click **Load Temporary Add-on**.
+4. Select the `manifest.json` file located in your extension's root directory.
+
+---
+
+## 📬 3. View Classification Results
+
+Once the extension is loaded:
+
+- Open your inbox in Thunderbird.
+- The extension will automatically extract email metadata and URLs.
+- It will send this data to the backend server for classification.
+- Based on the model’s prediction, suspicious emails will be:
+
+- ✅ **Flagged visually**
+- 🚨 **Highlighted with red indicators**
+- 📛 **Labeled as spam or safe accordingly**
+
+> ⚠️ **Note**: This extension runs temporarily and must be reloaded each time Thunderbird restarts.
+
+
+
