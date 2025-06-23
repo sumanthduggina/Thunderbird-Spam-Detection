@@ -58,3 +58,27 @@ Phishing emails pose a growing threat worldwide. Traditional spam filters strugg
 - Upgrade to Transformer-based models
 - Add multilingual phishing detection
 - Build UI dashboard and user feedback integration
+
+
+## 🛠️ Implementation Guide
+
+This guide outlines the steps to set up and run the real-time phishing detection system using Google Colab as the backend and Thunderbird as the email client.
+
+---
+
+### 📦 1. Email Classification Backend (Google Colab)
+
+#### ✅ Step 1: Upload Python Scripts
+Upload the following files to your Google Colab session:
+- `LSTM.py`
+- `Embedding_and_positional_encoding.py`
+- `Preprocessing.py`
+- `Training_and_evaluating.py`
+- `Final_rf_model.pkl`
+- `Lstm_url_classifier.pth`
+
+#### ✅ Step 2: Install Required Libraries
+In a Colab code cell, run:
+```bash
+!pip install flask torch pyngrok
+
