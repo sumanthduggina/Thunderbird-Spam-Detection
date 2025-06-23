@@ -52,22 +52,6 @@ Phishing emails pose a growing threat worldwide. Traditional spam filters strugg
 
 ---
 
-## 📁 Repository Structure
-📦thunderbird-phishing-detector/
-├── backend/ # Flask server with ML models
-│ ├── rf_model.pkl
-
-│ ├── lstm_model.pth
-
-│ └── app.py
-├── extension/ # Thunderbird extension files
-│ ├── manifest.json
-│ ├── background.js
-│ ├── content-script.js
-│ └── styles.css
-└── README.md
-
-
 ## 🧭 Future Improvements
 
 - Host backend on AWS/GCP for 24/7 uptime
